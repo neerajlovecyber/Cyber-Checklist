@@ -24,9 +24,8 @@ router.get("/:id", async (req, res) => {
 // This section will help you create a new record.
 router.post("/", async (req, res) => {
   let newDocument = {
-    name: req.body.name,
-    position: req.body.position,
-    level: req.body.level,
+    _id:  req.body.email,
+    projectdata: req.body.projectdata 
   };
   let collection = await db.collection("records");
   let result = await collection.insertOne(newDocument);
@@ -34,14 +33,12 @@ router.post("/", async (req, res) => {
 });
 
 // This section will help you update a record by id.
-router.patch("/:id", async (req, res) => {
-  const query = { _id: new ObjectId(req.params.id) };
+router.patch("/:email", async (req, res) => {
+  const query = { _id: req.params.email };
   const updates =  {
     $set: {
-      name: req.body.name,
-      position: req.body.position,
-      level: req.body.level
-    }
+      _id:  req.body.email,
+      projectdata: req.body.projectdata}
   };
 
   let collection = await db.collection("records");
@@ -51,8 +48,9 @@ router.patch("/:id", async (req, res) => {
 });
 
 // This section will help you delete a record
-router.delete("/:id", async (req, res) => {
-  const query = { _id: new ObjectId(req.params.id) };
+router.delete("/:email", async (req, res) => {
+  const query = { _id: req.params.email };
+;
 
   const collection = db.collection("records");
   let result = await collection.deleteOne(query);
