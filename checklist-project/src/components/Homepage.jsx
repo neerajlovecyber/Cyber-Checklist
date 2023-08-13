@@ -31,19 +31,23 @@ const Homepage = () => {
 
     return (
         <div className='Homepage'>
+            <div className='logo-name'>
+                <span className='logo-name-one'>Pen</span>track
+            </div>
             <div className="radar">
                 <div className="radar__dot"></div>
                 <div className="radar__dot"></div>
                 <div className="radar__dot"></div>
             </div>
             <div className={`Homepage-one ${loaded ? 'Homepage-one-load':''}`}>
-                Topics
+                Pentest
             </div>
             <div className={`Homepage-two ${loaded ? 'Homepage-two-load':''}`}>
-                Checklists
+                Tracking
             </div>
             <div className='Homepage-three'>
-                Topics affect design on a global scale, in the context of a website or app. These are great to be familiar with as you work across different areas of design, as they'll come up in discussion more than you think.
+            Elevate security with PenetraTracekr: Track and enhance penetration tests effortlessly. 
+            Real-time insights for robust cybersecurity in a digital landscape.
             </div>
             <button className='home-btn' onClick={() => loginWithRedirect()}>
                 Login

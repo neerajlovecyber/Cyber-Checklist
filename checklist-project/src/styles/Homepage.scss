@@ -16,12 +16,13 @@
         font-size: 80px;
         font-weight: bolder;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: -20%;
         transition: left 0.5s ease-in-out;
         @media(max-width:(767px)){
             left: -60%;
             font-size: 60px;
+            top: 35%;
         }
     }
     .Homepage-one-load{
@@ -35,19 +36,20 @@
         font-size: 80px;
         font-weight: bolder;
         position: absolute;
-        top: 42%;
+        top: 32%;
         left: -30%;
         transition: left 1.5s ease-in-out;
         @media(max-width:(767px)){
             left: -100%;
             font-size: 60px;
+            top: 40%;
         }
     }
     .Homepage-two-load{
         color: rgb(5, 2, 49);
         left:10%;
         @media(max-width:(767px)){
-            left: 8%;
+            left: 10%;
         }
     }
     .Homepage-three{
@@ -56,7 +58,7 @@
         color: rgb(50, 30, 233);
         text-align: left;
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 10%;
         @media (max-width:(767px)) {
             left: 10%;
@@ -66,8 +68,8 @@
     }
     .home-btn{
         position: absolute;
-        top: 60%;
-        left: 50%;
+        top: 70%;
+        left: 10%;
         width: 300px;
         height: 50px;
         background-color:rgb(60, 51, 185); ;
@@ -84,22 +86,42 @@
         width: 100px;
         height: 100px;
         position:absolute;
-        left: 59%;
-        top:32%;
+        left: 61.7%;
+        top:36%;
         // background-color: yellow;
+        @media (max-width:767px) {
+          top:20%;
+          left: 30%;
+        }
         .logo-one{
             width: 120px;
             height: 120px;
             opacity: 90%;
         }
     }
+    .logo-name{
+      height: fit-content;
+      width: fit-content;
+      position:absolute;
+      top: 05%;
+      left: 10%;
+      font-size: 60px;
+      font-weight: bold;
+      .logo-name-one{
+        color: rgb(60, 51, 185);
+      }
+    }
 }
 .radar {
     position: absolute;
+    @media (max-width:767px) {
+      top: 15%;
+      left: 20%;
+    }
     top:20%;
     left: 53%;
-    width: 40vmin;
-    height: 40vmin;
+    width: 50vmin;
+    height: 50vmin;
     background: repeating-radial-gradient(
           transparent,
           transparent 4.5%,
