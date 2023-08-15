@@ -7,6 +7,8 @@
     background-color: rgb(227, 227, 255);
     // background-color: rgb(200, 255, 0);
     .login-main-one{
+        position: fixed;
+        overflow: hidden;
         @media (max-width:767px){
             height: 8%;
         }
@@ -41,6 +43,8 @@
             
         }
         .mob-nav{
+            // position: fixed;
+            // left: 50%;
             display: none;
             @media (max-width:767px) {
                 display: block;
@@ -81,7 +85,7 @@
 }
 .mob-menu{
     width: 55%;
-    height: 92%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(241, 241, 241);

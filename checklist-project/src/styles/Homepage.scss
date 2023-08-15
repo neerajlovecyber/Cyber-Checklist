@@ -40,6 +40,7 @@
         left: -30%;
         transition: left 1.5s ease-in-out;
         @media(max-width:(767px)){
+            margin-top: 5%;
             left: -100%;
             font-size: 60px;
             top: 42%;
@@ -60,6 +61,7 @@
         position: absolute;
         top: 50%;
         left: 10%;
+        // margin-top: 5%;
         @media (max-width:(767px)) {
             left: 10%;
             width: 80%;
@@ -79,8 +81,9 @@
         font-size: 40px;
         border-radius:10px;
         @media (max-width:767px) {
-            top: 70%;
-            left: 10%;
+          top: 70%;
+          left: 10%;
+          margin-top: 2%;
         }
     }
     .logo{
