@@ -1,0 +1,107 @@
+.login-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(227, 227, 255);
+    // background-color: rgb(200, 255, 0);
+    .login-main-one{
+        @media (max-width:767px){
+            height: 8%;
+        }
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo-name{
+            @media (max-width:767px) {
+                font-size: 40px;
+            }
+            height: fit-content;
+            width: fit-content;
+            font-size: 50px;
+            font-weight: bold;
+            .logo-name-one{
+                color: rgb(60, 51, 185);
+            }
+        }
+        .login-user-info{
+            @media (max-width:767px){
+                display: none;
+            }
+            margin-top: 1%;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 20px;
+            width: fit-content;
+            height: fit-content;
+            // background-color: red;
+            
+        }
+        .mob-nav{
+            display: none;
+            @media (max-width:767px) {
+                display: block;
+                margin-top: 4%;
+                margin-right: 2%;
+            }
+        }
+        .mob-menu{
+            display: none;
+            @media(max-width:767px){
+
+            }
+        }
+    }
+    .login-main-two{
+        margin-top: 0.5%;
+        height: 100vh;
+        width: 100%;
+        // background-color: yellow;
+        // flex: 2;
+    }
+    
+}
+.info-pic{
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    @media (max-width:767px) {
+        height: 10%;
+        width: 35%;
+        border-radius: 50%;  
+        margin-left: 30%;                  
+        margin-top: 2.5%;
+    }
+}
+.info-name{
+    margin-top: 5%;
+}
+.mob-menu{
+    width: 55%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    transition: 0.5s;
+}
+
+.log-out-btn{
+    position: absolute;
+    top: 96%;
+    left: 1%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border-radius: 10%;
+    background-color: rgb(227, 227, 255);
+    border:2px solid rgb(102, 75, 255);
+    font-size: 140%;
+    
+}

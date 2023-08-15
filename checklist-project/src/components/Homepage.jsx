@@ -46,14 +46,14 @@ const Homepage = () => {
                 Tracking
             </div>
             <div className='Homepage-three'>
-            Elevate security with PenetraTracekr: Track and enhance penetration tests effortlessly. 
+            Elevate security with PenetraTracker: Track and enhance penetration tests effortlessly. 
             Real-time insights for robust cybersecurity in a digital landscape.
             </div>
             <button className='home-btn' onClick={() => loginWithRedirect()}>
                 Login
             </button>
             <div className='logo'>
-                <img className='logo-one' src={logo}/>
+                <img className='logo-one' src={logo} alt={''}/>
            </div>
            
         </div>
